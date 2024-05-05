@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 600px;
+    background-color: yellow;
+    border:2px solid black;
+    display: grid;
+    grid-template-rows: 30px 1fr 1fr 30px;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    grid-template-areas:
+    "hd"
+    "side"
+    "main"
+    "ft";
+}
+.box{
+    background-color: aqua;
+    border:1px solid blue;
+
+}
+#header{
+    grid-area: hd;
+    
+}
+#side{
+    grid-area: side;
+}
+#content{
+    grid-area: main;
+}
+#footer{
+    grid-area: ft;
+}

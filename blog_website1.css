@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 100%;
+    display: grid;
+    grid-template-columns:500px 500px;
+    grid-template-rows: 60px repeat(3,1fr);
+    grid-template-areas: 
+    "ft ft"
+    "lf1 rt1"
+    "lf2 rt2"
+    "lf3 rt3";
+    grid-gap:25px;
+    place-content: center;
+    padding: 20px;
+
+}
+#footer{
+    grid-area: ft;
+    
+    text-align: center;
+}
+#left1{
+    grid-area: lf1;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+    
+    
+    
+    
+}
+#right1{
+    grid-area: rt1;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+#left2{
+    grid-area: lf2;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+#right2{
+    grid-area: rt2;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+#left3{
+    grid-area: lf3;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+#right3{
+    grid-area: rt3;
+    border: 2px solid black;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 100px;
+}

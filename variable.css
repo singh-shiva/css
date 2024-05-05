@@ -1,0 +1,17 @@
+*{
+    --dark-width:700px;
+}
+:root{
+    --dark-red:#32ab1c;
+}
+.container{
+    background-color: red;
+    border:2px solid green;
+    height: 400px;
+    width: var(--dark-width);
+}
+.box{
+    border:1px solid black;
+    background-color: aqua;
+    color: var(--dark-red);
+}

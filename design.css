@@ -1,0 +1,164 @@
+#navlist{
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+}
+.container{
+    width:100vw;
+    height: 100%;
+    overflow-x: none;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(212,198,198,1) 100%);
+   
+    
+}
+.navcontainer{
+    width:100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,112,176,1) 35%, rgba(0,212,255,1) 100%);
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+}
+#navlogo{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+#navitem{
+    display: flex;
+    gap:30px;
+}
+.footerbox{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,112,176,1) 35%, rgba(0,212,255,1) 100%);
+    color: beige;
+    text-align: center;
+    min-height: 30px;
+
+}
+.footerbox p{
+    color: beige;
+    font-size: 1.5rem;
+}
+.contentbox{
+    width: 60%;
+    
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    box-shadow: 0px 0px 30px black;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.rightbox img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    transition: all 0.6s 0s linear;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.ingbox{
+    font-size: 1.3rem;
+}
+.recipebox{
+    font-size: 1.1rem;
+}
+.rightbox{
+    position: relative;
+    transition: all 0.3s linear;
+    
+}
+.rightbox .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(118, 111, 111, 0.658);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.6s 0s linear;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+.leftaside{
+    
+    width: 20%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(212,141,157,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1s linear 0s infinite alternate none running back;
+}
+.maincontainer{
+    display: flex;
+    
+}
+
+.rigthaside{
+    
+    width: 20%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(212,141,157,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1s linear 0s infinite alternate both running back;
+}
+.vertical-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+.vertical-text span {
+    font-size: 30px; /* Change the size as desired */
+    font-weight: bold; /* You can apply other styles as needed */
+    margin: 5px; /* Adjust the spacing between letters as needed */
+    color: rgb(232, 215, 215);
+}
+@keyframes back {
+    from{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(212,141,157,1) 100%);
+    }
+    to{
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 100%);
+}
+}
